@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #fcf4dd;/*#269;*/
+  background-image: linear-gradient(rgba(133,188,204, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(133,188,204, 0.3) 1px, transparent 1px),
+    linear-gradient(rgba(133,188,204, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(133,188,204, 0.3) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.quiz-title {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+
+  text-align: center;
+}
+
+.languages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+
+  background-color: green;
+}
+
+.languages-list__item {
+  margin: 15px;
+  padding: 0;
+}
+
+.languages-list__btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  /*border-radius: 20px;*/
+
+  border-top-left-radius: 20px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 50px; border-bottom-left-radius: 10px;
+}
+
+
+
+
+.languages-list__btn {
+
+/* text */
+  text-decoration:    none;
+  font-weight:      bold;
+  text-shadow:      rgba(255,255,255,.5) 0 1px 0;
+  -webkit-user-select:  none;
+  -moz-user-select:     none;
+  user-select:      none;
+  
+  
+/* layout */
+  /*padding:        .5em .6em .4em .6em;
+  margin:         .5em;
+  display:        inline-block;*/
+  position:         relative;
+  
+  /*-webkit-border-radius:  8px;
+  -moz-border-radius:   8px;*/
+  border-radius:  8px;
+  
+/* effects */
+  border-top:     1px solid rgba(255,255,255,0.8);
+  border-bottom:    1px solid rgba(0,0,0,0.1);
+  
+  background-image:   -webkit-gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255,255,255,0) ), to( rgba(255,255,255,0.7) )), url(noise.png);
+  background-image:   -moz-radial-gradient(top, ellipse cover, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 100%), url(noise.png);
+  background-image:   gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255,255,255,0) ), to( rgba(255,255,255,0.7) )), url(noise.png);
+
+  -webkit-transition: background .2s ease-in-out;
+  -moz-transition:  background .2s ease-in-out;
+  transition:     background .2s ease-in-out;
+  
+/* color */
+  color: rgba(0, 0, 0, 0.6);/*hsl(0, 0%, 40%) !important;*/
+  background-color: red; /* hsl(0, 0%, 75%);
+  
+  /*-webkit-box-shadow: inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em,
+            hsl(0, 0%, 60%) 0 .1em 3px, hsl(0, 0%, 45%) 0 .3em 1px, 
+            rgba(0,0,0,0.2) 0 .5em 5px; 
+  -moz-box-shadow:  inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, 
+            hsl(0, 0%, 60%) 0 .1em 3px, hsl(0, 0%, 45%) 0 .3em 1px, 
+            rgba(0,0,0,0.2) 0 .5em 5px;*/
+  box-shadow:     inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ 
+            hsl(0, 0%, 60%) 0 .1em 3px, hsl(0, 0%, 45%) 0 .3em 1px, /* color border */
+            rgba(0,0,0,0.2) 0 .5em 5px; /* drop shadow */
+
+
+
+cursor: pointer;
+border-left: none;
+  border-right: none;
+}
+
+.languages-list__btn:hover {
+  background-color:   hsl(0, 0%, 83%);
+}
+
+
+
+.languages-list__btn:active {
+  background-image:   -webkit-gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255,255,255,0) ), to( rgba(255,255,255,0) )), url(noise.png);
+  background-image:   -moz-gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255,255,255,0) ), to( rgba(255,255,255,0) )), url(noise.png);
+  background-image:   gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255,255,255,0) ), to( rgba(255,255,255,0) )), url(noise.png);
+
+  -webkit-box-shadow: inset rgba(255,255,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.2) 0 -0.1em .3em, /* inner shadow */ 
+              rgba(0,0,0,0.4) 0 .1em 1px, /* border */
+              rgba(0,0,0,0.2) 0 .2em 6px; /* drop shadow */
+  -moz-box-shadow:  inset rgba(255,255,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.2) 0 -0.1em .3em, /* inner shadow */ 
+              rgba(0,0,0,0.4) 0 .1em 1px, /* border */
+              rgba(0,0,0,0.2) 0 .2em 6px; /* drop shadow */
+  box-shadow:     inset rgba(255,255,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.2) 0 -0.1em .3em, /* inner shadow */ 
+              rgba(0,0,0,0.4) 0 .1em 1px, /* border */
+              rgba(0,0,0,0.2) 0 .2em 6px; /* drop shadow */
+
+  -webkit-transform:  translateY(.2em);
+  -moz-transform:   translateY(.2em);
+  transform:      translateY(.2em);
+}
+
+.languages-list__btn:focus {
+  outline: none;
+  color: rgba(254,255,255,0.9) !important;
+  text-shadow: rgba(0,0,0,0.2) 0 1px 2px;
+}
+
+.languages-list__btn--orange {
+  color:        hsl(39, 100%, 30%) !important;
+  background-color:   hsl(39, 100%, 50%);
+
+  -webkit-box-shadow: inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ 
+              hsl(39, 100%, 40%) 0 .1em 3px, hsl(39, 100%, 30%) 0 .3em 1px, /* color border */
+              rgba(0,0,0,0.2) 0 .5em 5px; /* drop shadow */
+  -moz-box-shadow:  inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ 
+              hsl(39, 100%, 40%) 0 .1em 3px, hsl(39, 100%, 30%) 0 .3em 1px, /* color border */
+              rgba(0,0,0,0.2) 0 .5em 5px; /* drop shadow */
+  box-shadow:     inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ 
+              hsl(39, 100%, 40%) 0 .1em 3px, hsl(39, 100%, 30%) 0 .3em 1px, /* color border */
+              rgba(0,0,0,0.2) 0 .5em 5px; /* drop shadow */
+}
+.languages-list__btn--orange:hover {  background-color: hsl(39, 100%, 65%); }
+
+.languages-list__btn--glossy:after {
+  content:  "";
+  position:   absolute; 
+    width:    90%;
+    height:   60%;
+    top:    0;
+    left:     5%;    
+    
+    -webkit-border-radius:  .5em .5em 1em 1em / .5em .5em 2em 2em;    
+    -moz-border-radius:   .5em .5em 1em 1em / .5em .5em 2em 2em;
+    border-radius:      .5em .5em 1em 1em / .5em .5em 2em 2em;
+    
+    background-image:     -webkit-gradient(linear, 0% 0, 100% 0, from( rgba(255,255,255,.55) ), to( rgba(255,255,255,.5) ),
+                  color-stop(.5, rgba(255,255,255,0)), color-stop(.8, rgba(255,255,255,0)) ); 
+    background-image:     -moz-linear-gradient(left, rgba(255,255,255,.55), rgba(255,255,255,0) 50%, rgba(255,255,255,0) 80%, rgba(255,255,255,.5) ); 
+    background-image:     gradient(linear, 0% 0, 100% 0, from( rgba(255,255,255,.55) ), to( rgba(255,255,255,.5) ),
+                  color-stop(.5, rgba(255,255,255,0)), color-stop(.8, rgba(255,255,255,0)) ); 
+}
+.languages-list__btn--glossy:active:after {
+  opacity: .6;
+}
+
+
+
+
+
